@@ -1,0 +1,18 @@
+name: MelonWarsP1
+main: MelonWars.Main
+version: 1.0 -By Bossminer10
+description: Melon Wars Plugin!
+commands:
+    rifle:
+       description: Gives Rifle!
+    greengear:
+       description: Gives Melon Gear!
+    machinegun:
+       description: Gives Machinegun!
+    sniper:
+       description: Gives Sniper!
+    redgear:
+       description: Gives Red Gear!
+    econ:
+       aliases: [ce, ce]    
+       description: add/subtract/set players money
