@@ -20,7 +20,7 @@ public class FlakJacket implements Listener {
 
 	@EventHandler
 	  public void onInventoryClick(InventoryClickEvent event) {
-		  if(ChatColor.stripColor(event.getInventory().getName()).equalsIgnoreCase("§5Perk Selector")) 
+		  if(ChatColor.stripColor(event.getInventory().getName()).equalsIgnoreCase("Â§5Perk Selector")) 
 			  return;
 		  Player p = (Player) event.getWhoClicked();
 			  
@@ -34,15 +34,15 @@ public class FlakJacket implements Listener {
 	    	 return;
 			  
 		  if (event.getCurrentItem().getType() == Material.LEATHER_CHESTPLATE) {
-		  if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(("§7Flak Jacket"))){
+		  if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(("Â§7Flak Jacket"))){
 			  	p.playSound(p.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1, 1);
 			  	
 			  	ItemStack D = new ItemStack(Material.DIAMOND);
 				  ItemMeta DM = D.getItemMeta();
 			  	
-				  DM.setDisplayName("§bPerk 1");
+				  DM.setDisplayName("Â§bFlack Jacket");
 				  ArrayList<String> lD = new ArrayList();
-				  lD.add("§fFlack Jacket Perk!");
+				  lD.add("Â§fFlack Jacket Perk!");
 				  DM.setLore(lD);
 				  D.setItemMeta(DM);
 				  
